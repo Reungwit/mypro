@@ -47,6 +47,8 @@ function DocumentEditor() {
         body: JSON.stringify(formData),
       });
 
+    
+
       if (!response.ok) throw new Error("เกิดข้อผิดพลาดในการดาวน์โหลดไฟล์");
 
       const blob = await response.blob();
@@ -96,7 +98,7 @@ function DocumentEditor() {
         <input type="text" name="academic_year" placeholder="ปีการศึกษา" onChange={handleInputChange} />
       </div>
 
-      {!isPreview && (
+      {/* {!isPreview && (
         <div className="editor-box">
           <h2>✍️ ช่องพิมพ์ข้อความ</h2>
           <CodeMirror
@@ -115,7 +117,7 @@ function DocumentEditor() {
             dangerouslySetInnerHTML={{ __html: marked(content) }}
           />
         </div>
-      )}
+      )} */}
     </div>
   );
 }
