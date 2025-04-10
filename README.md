@@ -1,10 +1,43 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App]
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+1.node -v
+  npm -v
+
+2.npm install react-scripts --save
+
+3.cd backend
+
+4.python manage.py runserver
+
+5.ลอง npm start
+
+### ถ้ารันไม่ได้ 
+ลอง 1.ลบโฟลเดอร์ node_modules และติดตั้งใหม่
+    2. rm -rf node_modules
+       rm package-lock.json
+       npm install
+
+### ไลบารี่อื่นๆ
+
+python -m venv myenv
+myenv\Scripts\activate
+pip install django
+pip install djangorestframework
+pip install python-docx
+pip install djangorestframework
+pip install django-cors-headers
+
+push an existing repository from the command line
+git remote add origin https://github.com/Reungwit/mypro.git
+git branch -M main
+git push -u origin main
+
 
 ### `npm start`
 
@@ -29,15 +62,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
