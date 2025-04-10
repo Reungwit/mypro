@@ -20,23 +20,35 @@ In the project directory, you can run:
 
 ### ถ้ารันไม่ได้ 
 ลอง 1.ลบโฟลเดอร์ node_modules และติดตั้งใหม่
+
     2. rm -rf node_modules
+    
        rm package-lock.json
+       
        npm install
 
 ### ไลบารี่อื่นๆ
 
 python -m venv myenv
+
 myenv\Scripts\activate
+
 pip install django
+
 pip install djangorestframework
+
 pip install python-docx
+
 pip install djangorestframework
+
 pip install django-cors-headers
 
 push an existing repository from the command line
+
 git remote add origin https://github.com/Reungwit/mypro.git
+
 git branch -M main
+
 git push -u origin main
 
 
