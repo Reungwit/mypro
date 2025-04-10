@@ -3,9 +3,22 @@ import CodeMirror from "@uiw/react-codemirror";
 import { markdown } from "@codemirror/lang-markdown";
 import { EditorView } from "@codemirror/view";
 import { marked } from "marked";
+import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";  // สำหรับ React Router
 import "./styles.css";
+import DocumentPage from "./DocumentPage";  // หน้าใหม่ที่จะไป
 
-export default function DocumentEditor() {
+export default function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<DocumentEditor />} />
+        <Route path="/document" element={<DocumentPage />} /> {/* เพิ่มเส้นทางสำหรับ DocumentPage */}
+      </Routes>
+    </Router>
+  );
+}
+
+function DocumentEditor() {
   const [content, setContent] = useState("");
   const [isPreview, setIsPreview] = useState(false);
 
@@ -51,6 +64,13 @@ export default function DocumentEditor() {
     }
   };
 
+  // ใช้ useNavigate() จาก React Router
+  const navigate = useNavigate();
+
+  const goToDocument = () => {
+    navigate("/document");  // เมื่อคลิกปุ่มนี้ จะลิงค์ไปที่ /document
+  };
+
   return (
     <div className="container">
       <button
@@ -61,6 +81,11 @@ export default function DocumentEditor() {
       </button>
       <button className="btn btn-success mb-4" onClick={downloadWordFile}>
         📥 ดาวน์โหลดเป็น Word
+      </button>
+
+      {/* ปุ่มไปที่หน้าใหม่ */}
+      <button className="btn btn-success mb-4" onClick={goToDocument}>
+        เอกสาร ทก.01
       </button>
 
       <div className="form-container">
