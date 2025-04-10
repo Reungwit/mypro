@@ -7,6 +7,7 @@ This project was bootstrapped with [Create React App]
 In the project directory, you can run:
 
 1.node -v
+
   npm -v
 
 2.npm install react-scripts --save
