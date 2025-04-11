@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App]
 ## Available Scripts
 
 In the project directory, you can run:
+
 ติดตั้ง 1.NodeJS และ add parh
 
 2.Python
