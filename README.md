@@ -47,8 +47,6 @@ pip install djangorestframework
 
 pip install python-docx
 
-pip install djangorestframework
-
 pip install django-cors-headers
 
 # การอัปเดทไฟล์
