@@ -30,6 +30,10 @@ In the project directory, you can run:
        rm package-lock.json
        
        npm install
+       
+3.React Router ให้ติดตั้งก่อน:
+
+npm install react-router-dom
 
 ### ไลบารี่อื่นๆ
 
