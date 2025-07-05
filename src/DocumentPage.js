@@ -5,9 +5,6 @@ import "./styles.css";
 
 export default function DocumentPage() {
 
-
-  
-
   const [formData, setFormData] = useState({
     project_title_th: "",
     project_title_en: "",
